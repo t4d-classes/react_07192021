@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="styles/lm1.css" rel="stylesheet">
+  <link href="styles/lm2.css" rel="stylesheet">
+  <title>Sample Form Elements</title>
+</head>
+
+<body>
+  <div class="container-fluid spacing-top-md-lg">
+
+    <h1>Agency Appointment Request</h1>
+    <p>
+      Thank you for your interest in becoming a commercial lines agent with Liberty Mutual Insurance.
+    </p>
+
+    <p>
+      Once you have entered the information requested below, a member of our field marketing staff will contact
+      you within 30 days to review the information and further discuss your interest in becoming an agent with
+      Liberty Mutual Insurance.
+    </p>
+
+    <p>
+      Please visit <a href="http://www.safeco.com/about-safeco/for-agents/sellsafeco" target="_blank">Safeco
+        Insurance</a>
+      to request a personal lines appointment.
+    </p>
+
+    <div class="row">
+      <div class="col-md-6 form-group lmgbi_formEntry">
+        <label class="lmgbi_formTitle">
+          Agency Name:
+        </label>
+        <span class="required-marker"></span>
+        <br>
+        <input class="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr" type="text">
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;">Agency Name required</span>
+      </div>
+      <div class="col-md-6 form-group lmgbi_formEntry">
+        <label class="lmgbi_formTitle">Street Address:</label>
+        <span class="required-marker"></span>
+        <br>
+        <input class="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr" type="text">
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;">Street Address required</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 form-group lmgbi_formEntry">
+        <label class="lmgbi_formTitle">City:</label>
+        <span class="required-marker"></span>
+        <br>
+        <input class="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr" type="text">
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;">City required</span>
+      </div>
+      <div class="col-md-3 form-group form-inline lmgbi_formEntry">
+        <label class="lmgbi_formTitle">State:</label><span class="required-marker"></span>
+        <br>
+        <select class="form-control control-select lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
+          id="lmgbi_formState">
+          <option>Select One</option>
+          <option value="AK|West">AK</option>
+          <option value="AL|South">AL</option>
+          <option value="AR|Central">AR</option>
+          <option value="AZ|Central">AZ</option>
+          <option value="CA|West">CA</option>
+          <option value="CO|Central">CO</option>
+          <option value="CT|North">CT</option>
+          <option value="DC|South">DC</option>
+          <option value="DE|South">DE</option>
+          <option value="FL|South">FL</option>
+          <option value="GA|South">GA</option>
+          <option value="IA|Central">IA</option>
+          <option value="ID|Central">ID</option>
+          <option value="IL|North">IL</option>
+          <option value="IN|North">IN</option>
+          <option value="KS|Central">KS</option>
+          <option value="KY|South">KY</option>
+          <option value="LA|Central">LA</option>
+          <option value="MA|North">MA</option>
+          <option value="MD|South">MD</option>
+          <option value="ME|North">ME</option>
+          <option value="MI|North">MI</option>
+          <option value="MN|Central">MN</option>
+          <option value="MO|Central">MO</option>
+          <option value="MS|South">MS</option>
+          <option value="MT|Central">MT</option>
+          <option value="NC|South">NC</option>
+          <option value="ND|Central">ND</option>
+          <option value="NE|Central">NE</option>
+          <option value="NH|North">NH</option>
+          <option value="NJ|South">NJ</option>
+          <option value="NM|Central">NM</option>
+          <option value="NV|Central">NV</option>
+          <option value="NY|North">NY</option>
+          <option value="OH|North">OH</option>
+          <option value="OK|Central">OK</option>
+          <option value="OR|West">OR</option>
+          <option value="PA|North">PA</option>
+          <option value="RI|North">RI</option>
+          <option value="SC|South">SC</option>
+          <option value="SD|Central">SD</option>
+          <option value="TN|South">TN</option>
+          <option value="TX|Central">TX</option>
+          <option value="UT|Central">UT</option>
+          <option value="VA|South">VA</option>
+          <option value="VT|North">VT</option>
+          <option value="WA|West">WA</option>
+          <option value="WI|North">WI</option>
+          <option value="WV|South">WV</option>
+          <option value="WY|Central">WY</option>
+        </select>
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;">State required</span>
+      </div>
+      <div class="col-md-3 form-group lmgbi_formEntry">
+        <label class="lmgbi_formTitle">Zip code:</label><span class="required-marker"></span>
+        <br>
+        <input class="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr" type="text">
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;">Zip code required</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <span class="required-marker"></span>
+        <label>I'm interested in the following coverage(s):</label>
+        <br>
+        <span class="lmgbi_formEntry">
+          <input class="lmgbi_formValue lmgbi_useNameAttr" id="property" type="checkbox" value="1" />
+        </span>
+        Property<br>
+        <span class="lmgbi_formEntry">
+          <input class="lmgbi_formValue lmgbi_useNameAttr" id="generalliability" type="checkbox" value="1" />
+        </span>
+        General Liability<br>
+        <span class="lmgbi_formEntry">
+          <input class="lmgbi_formValue lmgbi_useNameAttr" id="auto" type="checkbox" value="1" />
+        </span>
+        Auto<br>
+        <span class="lmgbi_formEntry">
+          <input class="lmgbi_formValue lmgbi_useNameAttr" id="workerscompensation" type="checkbox" value="1" />
+        </span>
+        Workers Compensation<br>
+        <span class="lmgbi_formEntry">
+          <input class="lmgbi_formValue lmgbi_useNameAttr" id="umbrella" type="checkbox" value="1" />
+        </span>
+        Umbrella<br>
+        <span id="lmgbi_productAlert" style="color:red;display:none;">
+          I'm interested in the following coverage(s) required
+        </span>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 form-group lmgbi_formEntry col-md-8">
+        <label class="lmgbi_formTitle">Additional Comments:</label>
+        <br>
+        <textarea class="form-control lmgbi_formValue lmgbi_useNameAttr" rows="6"
+          data-field-name="description"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="lmgbi_formEntry form-group col-sm-6" id="formtype">
+        <span class="required-marker"></span>
+        <label class="lmgbi_formTitle">Form Type</label>
+        <br>
+        <div class="radio-inline">
+          <label class="lmgbi_formCheckLabel">
+            <input class="lmgbi_formValue lmgbi_formRequired" type="radio" data-name="formtype" value="leadintake" />
+            Call NOT transferred to BLSC. I would like the first available Business Lines sales representative to
+            contact my customer.
+          </label>
+        </div>
+        <br>
+        <div class="radio-inline">
+          <label class="lmgbi_formCheckLabel">
+            <input class="lmgbi_formValue lmgbi_formRequired" type="radio" data-name="formtype" value="warmintake" />
+            Call transferred to BLSC. I will warm transfer my customer to the BLSC (844-219-6911) or am already working
+            with the BLSC on this customer. (You MUST tell the agent that you've clicked submit so they can find this
+            referral.
+          </label>
+        </div>
+        <br>
+        <span class="lmgbi_formAlert" style="color:red;display:none;"> Form Type required</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-actions spacing-top-md-lg col-md-6 col-md-offset-5">
+        <span class="required-marker"></span> Required Fields
+        <input class="input-submit btn btn-primary" id="lmgbi_formSubmitBtn" type="button"
+          data-site="/business-insurance" value="Submit" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+
+/* please never do this */
+.info {
+  color: blue;
+}
+
+.critical {
+  font-weight: bold;
+}

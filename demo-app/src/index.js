@@ -11,7 +11,9 @@ const coverageList = [
 ];
 
 render(
-  <CoverageList coverages={coverageList} />,
+  <CoverageList coverages={coverageList}>
+    <h1>List of Coverages</h1>
+  </CoverageList>,
   document.querySelector("#root"),
 );
 

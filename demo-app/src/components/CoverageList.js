@@ -17,16 +17,24 @@ export class CoverageList extends Component {
         id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
       })),
+      children: PropTypes.node.isRequired,
     };
   }
 
   render() {
 
     return (
-      <ul>
-        {this.props.coverages.map(coverage =>
-          <li key={coverage.id}>{coverage.name}</li>)}
-      </ul>
+      <>
+        <header>
+          {this.props.children}
+        </header>
+        <ul>
+          {this.props.coverages.map(coverage =>
+            <li key={coverage.id} className="info critical">
+              {coverage.name}
+            </li>)}
+        </ul>
+      </>
     );
   }
 }

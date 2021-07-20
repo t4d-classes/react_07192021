@@ -46,7 +46,7 @@ export const App = () => {
         </div>
         <footer id="page-footer" className="row">
           <div className="col-md-12">
-            <small>&copy; {new Date().getFullYear()} LM. All Rights Reserve.</small>
+            <small>&copy; {new Date().getFullYear()} LM. All Rights Reserved.</small>
           </div>
         </footer>
       </div>

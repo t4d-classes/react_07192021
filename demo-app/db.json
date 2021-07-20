@@ -1,0 +1,399 @@
+{
+  "agencyStructure": [
+    { "id": 1, "name": "Corporation" },
+    { "id": 2, "name": "Partnership" },
+    { "id": 3, "name": "Sole Proprietor" },
+    { "id": 4, "name": "LLC" },
+    { "id": 5, "name": "LLP" },
+    { "id": 6, "name": "Other" }
+  ],
+  "coverages": [
+    { "id": 1, "name": "Property"},
+    { "id": 2, "name": "General Liability"},
+    { "id": 3, "name": "A​uto"},
+    { "id": 4, "name": "Workers Compensation​"},
+    { "id": 5, "name": "Umbrella​"}
+  ],
+  "states": [
+    {
+      "id": 1,
+      "name": "Alabama",
+      "abbr": "AL",
+      "region": "South"
+    },
+    {
+      "id": 2,
+      "name": "Alaska",
+      "abbr": "AK",
+      "region": "West"
+    },
+    {
+      "id": 3,
+      "name": "Arizona",
+      "abbr": "AZ",
+      "region": "Central"
+    },
+    {
+      "id": 4,
+      "name": "Arkansas",
+      "abbr": "AR",
+      "region": "Central"
+    },
+    {
+      "id": 5,
+      "name": "California",
+      "abbr": "CA",
+      "region": "West"
+    },
+    {
+      "id": 6,
+      "name": "Colorado",
+      "abbr": "CO",
+      "region": "Central"
+    },
+    {
+      "id": 7,
+      "name": "Connecticut",
+      "abbr": "CT",
+      "region": "North"
+    },
+    {
+      "id": 8,
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "region": "South"
+    },
+    {
+      "id": 9,
+      "name": "Delaware",
+      "abbr": "DE",
+      "region": "South"
+    },
+    {
+      "id": 10,
+      "name": "Florida",
+      "abbr": "FL",
+      "region": "South"
+    },
+    {
+      "id": 11,
+      "name": "Georgia",
+      "abbr": "GA",
+      "region": "South"
+    },
+    {
+      "id": 12,
+      "name": "Idaho",
+      "abbr": "ID",
+      "region": "Central"
+    },
+    {
+      "id": 13,
+      "name": "Illinois",
+      "abbr": "IL",
+      "region": "North"
+    },
+    {
+      "id": 14,
+      "name": "Indiana",
+      "abbr": "IN",
+      "region": "North"
+    },
+    {
+      "id": 15,
+      "name": "Iowa",
+      "abbr": "IA",
+      "region": "Central"
+    },
+    {
+      "id": 16,
+      "name": "Kansas",
+      "abbr": "KS",
+      "region": "Central"
+    },
+    {
+      "id": 17,
+      "name": "Kentucky",
+      "abbr": "KY",
+      "region": "South"
+    },
+    {
+      "id": 18,
+      "name": "Lousiana",
+      "abbr": "LA",
+      "region": "Central"
+    },
+    {
+      "id": 19,
+      "name": "Maine",
+      "abbr": "ME",
+      "region": "North"
+    },
+    {
+      "id": 20,
+      "name": "Maryland",
+      "abbr": "MD",
+      "region": "South"
+    },
+    {
+      "id": 21,
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "region": "North"
+    },
+    {
+      "id": 22,
+      "name": "Michigan",
+      "abbr": "MI",
+      "region": "North"
+    },
+    {
+      "id": 23,
+      "name": "Minnesota",
+      "abbr": "MN",
+      "region": "Central"
+    },
+    {
+      "id": 24,
+      "name": "Mississippi",
+      "abbr": "MS",
+      "region": "South"
+    },
+    {
+      "id": 25,
+      "name": "Missouri",
+      "abbr": "MO",
+      "region": "Central"
+    },
+    {
+      "id": 26,
+      "name": "Montana",
+      "abbr": "MT",
+      "region": "Central"
+    },
+    {
+      "id": 27,
+      "name": "Nebraska",
+      "abbr": "NE",
+      "region": "Central"
+    },
+    {
+      "id": 28,
+      "name": "Nevada",
+      "abbr": "NV",
+      "region": "Central"
+    },
+    {
+      "id": 29,
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "region": "North"
+    },
+    {
+      "id": 30,
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "region": "South"
+    },
+    {
+      "id": 31,
+      "name": "New Mexico",
+      "abbr": "NM",
+      "region": "Central"
+    },
+    {
+      "id": 32,
+      "name": "New York",
+      "abbr": "NY",
+      "region": "North"
+    },
+    {
+      "id": 33,
+      "name": "North Carolina",
+      "abbr": "NC",
+      "region": "South"
+    },
+    {
+      "id": 34,
+      "name": "North Dakota",
+      "abbr": "ND",
+      "region": "Central"
+    },
+    {
+      "id": 35,
+      "name": "Ohio",
+      "abbr": "OH",
+      "region": "North"
+    },
+    {
+      "id": 36,
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "region": "Central"
+    },
+    {
+      "id": 37,
+      "name": "Oregon",
+      "abbr": "OR",
+      "region": "West"
+    },
+    {
+      "id": 38,
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "region": "North"
+    },
+    {
+      "id": 39,
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "region": "North"
+    },
+    {
+      "id": 40,
+      "name": "South Carolina",
+      "abbr": "SC",
+      "region": "South"
+    },
+    {
+      "id": 41,
+      "name": "South Dakota",
+      "abbr": "SD",
+      "region": "Central"
+    },
+    {
+      "id": 42,
+      "name": "Tennessee",
+      "abbr": "TN",
+      "region": "South"
+    },
+    {
+      "id": 43,
+      "name": "Texas",
+      "abbr": "TX",
+      "region": "Central"
+    },
+    {
+      "id": 44,
+      "name": "Utah",
+      "abbr": "UT",
+      "region": "Central"
+    },
+    {
+      "id": 45,
+      "name": "Vermont",
+      "abbr": "VT",
+      "region": "North"
+    },
+    {
+      "id": 46,
+      "name": "Virginia",
+      "abbr": "VA",
+      "region": "South"
+    },
+    {
+      "id": 47,
+      "name": "Washington",
+      "abbr": "WA",
+      "region": "West"
+    },
+    {
+      "id": 48,
+      "name": "West Virginia",
+      "abbr": "WV",
+      "region": "South"
+    },
+    {
+      "id": 49,
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "region": "North"
+    },
+    {
+      "id": 50,
+      "name": "Wyoming",
+      "abbr": "WY",
+      "region": "Central"
+    }
+  ],
+  "smallbizAppetiteGuide": [
+    {
+      "id": 1,
+      "label": "Retail",
+      "items": [
+        "Convenience Stores",
+        "Gift, Novelty and Souvenir Shops",
+        "Grocery Stores",
+        "Home Furnishings Stores",
+        "Jewelry Stores",
+        "Liquor Stores",
+        "Apparel & Accessory Stores",
+        "Music and Consumer Electronics",
+        "Shoe Stores"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Services",
+      "items": [
+        "Accounting/Bookkeeping",
+        "Advertising Agencies",
+        "Animal Pet Grooming",
+        "Auto Repair",
+        "Beauty and Barber Shops",
+        "Cable Installation",
+        "Car Washes",
+        "Engineering Services",
+        "Event Planning",
+        "Inspection And Appraisal",
+        "Interior Decorators",
+        "Janitorial Services",
+        "Legal Services, Law Offices",
+        "Locksmiths",
+        "Nail Salons",
+        "Photographers",
+        "Real Estate Agents",
+        "Shipping and Packing Services"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Restaurants",
+      "items": [
+        "Bagel Shops",
+        "Bakeries",
+        "Casual And Fine Dining",
+        "Coffee or Espresso House",
+        "Delicatessens",
+        "Donut Shops",
+        "Ice Cream or Yogurt Shops",
+        "Pizza Without Delivery"
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Artisan Contractors",
+      "items": [
+        "Carpentry – Interior",
+        "Carpet & Floor Installation",
+        "Electrical Work",
+        "Lawn & Garden Services",
+        "Painting/Drywall",
+        "Plumbing/HVAC",
+        "Tile Work"
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Health Care",
+      "items": [
+        "Chiropractors",
+        "Dentist",
+        "Medical Offices",
+        "Optometrists",
+        "Psychologists"
+      ]
+    }
+
+  ]
+}

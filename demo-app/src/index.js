@@ -16,6 +16,9 @@ render(
     <CoverageList coverages={coverageList}>
       <h1>List of Coverages</h1>
     </CoverageList>
+    <CoverageList coverages={coverageList}>
+      <h1>List of Coverages</h1>
+    </CoverageList>
     <MessageBox headerText="Cool">
       <p>This is <b>fun</b>!</p>
     </MessageBox>

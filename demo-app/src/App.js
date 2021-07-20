@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { CoveragesPage } from './pages/CoveragesPage';
 import { MessageBox } from './components/MessageBox';
+import { MenuBar } from './components/MenuBar';
+
+const pages = [
+  { id: 1, to: "/home", label: "Home", component: HomePage },
+  { id: 2, to: "/coverages", label: "Coverages", component: CoveragesPage },
+];
 
 export const App = () => {
   return (
@@ -14,22 +20,13 @@ export const App = () => {
               <img src="/images/LMI_H_BLUE_RGB.png" alt="LM Logo" />
             </Link>
           </div>
-          <nav id="menu-bar" className="col-md-8">
-            <ul>
-              <li><Link to="/home">Home</Link></li>
-              <li><Link to="/coverages">Coverages</Link></li>
-            </ul>
-          </nav>
+          <MenuBar menuItems={pages} />
         </header>
         <div className="row">
           <main id="content" className="col-md-8">
             <Switch>
-              <Route path="/home">
-                <HomePage />
-              </Route>
-              <Route path="/coverages">
-                <CoveragesPage />
-              </Route>
+              {pages.map(page =>
+                <Route key={page.id} path={page.to} component={page.component} />)}
               <Route path="/" exact>
                 <HomePage />
               </Route>

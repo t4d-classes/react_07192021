@@ -1,4 +1,7 @@
 {
+  "colors": [
+    { "id": 1, "name": "red" }
+  ],
   "agencyStructure": [
     { "id": 1, "name": "Corporation" },
     { "id": 2, "name": "Partnership" },

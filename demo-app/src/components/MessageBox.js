@@ -13,11 +13,11 @@ export class MessageBox extends Component {
   render() {
 
     return (
-      <div class="panel panel-default">
-        <h3 class="panel-heading">
+      <div className="panel panel-default">
+        <h3 className="panel-heading">
           {this.props.headerText}
         </h3>
-        <div class="panel-body">
+        <div className="panel-body">
           {this.props.children}
         </div>
       </div>

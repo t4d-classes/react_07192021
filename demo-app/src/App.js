@@ -9,20 +9,18 @@ export const App = () => {
     <Router>
       <div className="container-fluid">
         <header id="page-header" className="row">
-          <div className="col-md-12">
+          <div className="col-md-4">
             <Link to="/">
               <img src="/images/LMI_H_BLUE_RGB.png" alt="LM Logo" />
             </Link>
           </div>
-        </header>
-        <nav id="menu-bar" className="row">
-          <div className="col-md-12">
+          <nav id="menu-bar" className="col-md-8">
             <ul>
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/coverages">Coverages</Link></li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </header>
         <div className="row">
           <main id="content" className="col-md-8">
             <Switch>

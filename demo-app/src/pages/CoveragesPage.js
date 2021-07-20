@@ -3,7 +3,7 @@
 export const CoveragesPage = () => (
   <div>
     <header>
-      <h2>Coverages</h2>
+      <h1>Coverages</h1>
     </header>
     <p>Manage coverages...</p>
   </div>

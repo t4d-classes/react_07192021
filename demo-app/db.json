@@ -55,6 +55,10 @@
     {
       "name": "Errors and Omissions",
       "id": 6
+    },
+    {
+      "name": "Equipment",
+      "id": 7
     }
   ],
   "states": [

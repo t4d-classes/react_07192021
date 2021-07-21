@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { CoverageList } from "../components/CoverageList";
+import { CoverageForm } from "../components/CoverageForm";
 
 let renderCounter = 0;
 
@@ -34,6 +35,7 @@ export const CoveragesPage = () => {
       <CoverageList coverages={coverages}>
         <h2>List of Coverages</h2>
       </CoverageList>
+      <CoverageForm />
     </div>
   );
 

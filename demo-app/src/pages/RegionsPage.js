@@ -1,18 +1,11 @@
-import { useState, useEffect } from "react";
-
 import { RegionTable } from "../components/RegionTable";
+import { RegionForm } from "../components/RegionForm";
+
+import { useRegion } from '../hooks/useRegion';
 
 export const RegionsPage = () => {
 
-  const [regions, setRegions] = useState([]);
-
-  useEffect(() => {
-
-    fetch('http://localhost:3060/states')
-      .then(res => res.json())
-      .then(states => setRegions(states));
-
-  }, []);
+  const { regions, appendRegion } = useRegion();
 
   return (
     <div>
@@ -21,6 +14,8 @@ export const RegionsPage = () => {
       </header>
       <p>Here is a list of the Regions!</p>
       <RegionTable regions={regions} />
+      <h2>Add a Region</h2>
+      <RegionForm onSubmitForm={appendRegion} />
     </div>
   );
 

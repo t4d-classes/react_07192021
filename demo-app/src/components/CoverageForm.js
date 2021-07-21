@@ -42,30 +42,6 @@ export const CoverageForm = ({ onSubmitForm }) => {
           <br />
           <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Agency Name required</span>
         </div>
-        <div className="col-md-4 form-group lmgbi_formEntry">
-          <label className="lmgbi_formTitle" htmlFor="coverage-name-input">
-            Coverage Name:
-          </label>
-          <span className="required-marker"></span>
-          <br />
-          <input id="coverage-name-input" type="text"
-            className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
-            name="coverageName" value={coverageForm.coverageName} onChange={change} />
-          <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Agency Name required</span>
-        </div>
-        <div className="col-md-4 form-group lmgbi_formEntry">
-          <label className="lmgbi_formTitle" htmlFor="coverage-name-input">
-            Coverage Name:
-          </label>
-          <span className="required-marker"></span>
-          <br />
-          <input id="coverage-name-input" type="text"
-            className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
-            name="coverageName" value={coverageForm.coverageName} onChange={change} />
-          <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Agency Name required</span>
-        </div>
       </div>
       <div className="row">
         <button type="button" onClick={submitForm}>Add Coverage</button>

@@ -361,6 +361,12 @@
       "name": "Wyoming",
       "abbr": "WY",
       "region": "Central"
+    },
+    {
+      "name": "North Virginia",
+      "abbr": "NA",
+      "region": "North",
+      "id": 51
     }
   ],
   "smallbizAppetiteGuide": [

@@ -17,7 +17,7 @@ export const useCoverages = () => {
 
   const appendCoverage = (coverage) => {
 
-    fetch('http://localhost:3060/coverages', {
+    return fetch('http://localhost:3060/coverages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(coverage),

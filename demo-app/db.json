@@ -1,21 +1,61 @@
 {
   "colors": [
-    { "id": 1, "name": "red" }
+    {
+      "id": 1,
+      "name": "red"
+    }
   ],
   "agencyStructure": [
-    { "id": 1, "name": "Corporation" },
-    { "id": 2, "name": "Partnership" },
-    { "id": 3, "name": "Sole Proprietor" },
-    { "id": 4, "name": "LLC" },
-    { "id": 5, "name": "LLP" },
-    { "id": 6, "name": "Other" }
+    {
+      "id": 1,
+      "name": "Corporation"
+    },
+    {
+      "id": 2,
+      "name": "Partnership"
+    },
+    {
+      "id": 3,
+      "name": "Sole Proprietor"
+    },
+    {
+      "id": 4,
+      "name": "LLC"
+    },
+    {
+      "id": 5,
+      "name": "LLP"
+    },
+    {
+      "id": 6,
+      "name": "Other"
+    }
   ],
   "coverages": [
-    { "id": 1, "name": "Property"},
-    { "id": 2, "name": "General Liability"},
-    { "id": 3, "name": "A​uto"},
-    { "id": 4, "name": "Workers Compensation​"},
-    { "id": 5, "name": "Umbrella​"}
+    {
+      "id": 1,
+      "name": "Property"
+    },
+    {
+      "id": 2,
+      "name": "General Liability"
+    },
+    {
+      "id": 3,
+      "name": "A​uto"
+    },
+    {
+      "id": 4,
+      "name": "Workers Compensation​"
+    },
+    {
+      "id": 5,
+      "name": "Umbrella​"
+    },
+    {
+      "name": "Errors and Omissions",
+      "id": 6
+    }
   ],
   "states": [
     {
@@ -397,6 +437,5 @@
         "Psychologists"
       ]
     }
-
   ]
 }

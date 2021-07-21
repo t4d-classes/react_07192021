@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import PropTypes from "prop-types";
 
-
-export const CoverageForm = () => {
+export const CoverageForm = ({ onSubmitForm }) => {
 
   const [coverageForm, setCoverageForm] = useState({
     coverageName: '',
@@ -20,7 +20,12 @@ export const CoverageForm = () => {
 
   };
 
-  console.log(coverageForm);
+  const submitForm = () => {
+    onSubmitForm({ name: coverageForm.coverageName });
+    setCoverageForm({
+      coverageName: '',
+    });
+  };
 
   return (
     <form>
@@ -30,15 +35,12 @@ export const CoverageForm = () => {
           value={coverageForm.coverageName}
           onChange={change} />
       </label>
-      <button type="button" onClick={() => null}>Add Coverage</button>
+      <button type="button" onClick={submitForm}>Add Coverage</button>
     </form>
   );
 
-
 };
 
-
-/* <label htmlFor="coverage-name-input">
-Coverage Name:
-</label>
-<input type="text" id="coverage-name-input" /> */
+CoverageForm.propTypes = {
+  onSubmitForm: PropTypes.func.isRequired,
+};

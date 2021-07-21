@@ -1,28 +1,18 @@
-import { useState } from 'react';
 import PropTypes from "prop-types";
+
+import { useForm } from '../hooks/useForm';
 
 export const RegionForm = ({ onSubmitForm }) => {
 
-  const [regionForm, setRegionForm] = useState({
+  const [regionForm, change, resetRegionForm] = useForm({
     name: '',
     abbr: '',
     region: '',
   });
 
-  const change = (e) => {
-    setRegionForm({
-      ...regionForm,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   const submitForm = () => {
     onSubmitForm(regionForm).then(() => {
-      setRegionForm({
-        name: '',
-        abbr: '',
-        region: '',
-      });
+      resetRegionForm();
     });
   };
 

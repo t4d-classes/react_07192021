@@ -1,36 +1,47 @@
 import { useState } from 'react';
 import PropTypes from "prop-types";
 
+import { useForm } from "../hooks/useForm";
+
+// all values are truthy except for:
+
+// false
+// 0
+// '' empty string
+// NaN
+// null
+// undefined
+
 export const CoverageForm = ({ onSubmitForm }) => {
 
-  const [coverageForm, setCoverageForm] = useState({
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const [coverageForm, change, resetCoverageForm] = useForm({
     coverageName: '',
   });
 
-  const change = (e) => {
-
-    setCoverageForm({
-      // ... is the object spread operator
-      ...coverageForm, // copy the properties from the current state object on to the new state object
-      // computed property
-      // the expression in the square braces is evaluated, and the result
-      // is the name of the property that will updated on the object
-      [e.target.name]: e.target.value,
-    });
-
-  };
-
   const submitForm = () => {
+
+    if (coverageForm.coverageName.length === 0) {
+      setErrorMessage("Coverage name is required.");
+      return;
+    }
+
+    setErrorMessage('');
     onSubmitForm({ name: coverageForm.coverageName });
-    setCoverageForm({
-      coverageName: '',
-    });
+    resetCoverageForm();
   };
 
   return (
     <form className="container-fluid">
+      {errorMessage ? <span>Form is Invalid</span> : <span>Form is Valid</span>}
+      {errorMessage && <div className="row">
+        <p className="col-md-12">
+          {errorMessage}
+        </p>
+      </div>}
       <div className="row">
-        <div className="col-md-4 form-group lmgbi_formEntry">
+        <div className="col-md-12 form-group lmgbi_formEntry">
           <label className="lmgbi_formTitle" htmlFor="coverage-name-input">
             Coverage Name:
           </label>
@@ -40,7 +51,8 @@ export const CoverageForm = ({ onSubmitForm }) => {
             className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
             name="coverageName" value={coverageForm.coverageName} onChange={change} />
           <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Agency Name required</span>
+          <span className="lmgbi_formAlert" style={{ color: 'red', display: errorMessage ? 'inline' : 'none' }}>
+            Coverage Name required</span>
         </div>
       </div>
       <div className="row">

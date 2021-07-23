@@ -2,6 +2,9 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import { CoverageForm } from '../components/CoverageForm';
+import { verifyResetFormCalled } from '../hooks/useForm';
+
+jest.mock('../hooks/useForm');
 
 describe('CoverageForm testing library', () => {
   let coverageForm;
@@ -17,7 +20,7 @@ describe('CoverageForm testing library', () => {
     };
 
     coverage = {
-      name: 'AAA',
+      name: 'BBB',
     };
 
     submitCoverageSpy = jest.fn();
@@ -52,5 +55,7 @@ describe('CoverageForm testing library', () => {
     fireEvent.click(submitButton);
 
     expect(submitCoverageSpy).toHaveBeenCalledWith(coverage);
+
+    verifyResetFormCalled();
   });
 });

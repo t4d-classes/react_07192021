@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import PropTypes from "prop-types";
 
 import { useForm } from '../hooks/useForm';
 
 export const RegionForm = ({ onSubmitForm }) => {
+
+  const [errorMessages, setErrorMessages] = useState([]);
 
   const [regionForm, change, resetRegionForm] = useForm({
     name: '',
@@ -11,9 +14,34 @@ export const RegionForm = ({ onSubmitForm }) => {
   });
 
   const submitForm = () => {
+
+    const errorMessages = [];
+
+    if (regionForm.name.length === 0) {
+      errorMessages.push('REGIONFORM_NAME');
+    }
+
+    if (regionForm.abbr.length === 0) {
+      errorMessages.push('REGIONFORM_ABBR');
+    }
+
+    if (regionForm.region.length === 0) {
+      errorMessages.push('REGIONFORM_REGION');
+    }
+
+    if (errorMessages.length > 0) {
+      setErrorMessages(errorMessages);
+      return;
+    }
+
     onSubmitForm(regionForm).then(() => {
+      setErrorMessages([]);
       resetRegionForm();
     });
+  };
+
+  const showErr = (key) => {
+    return errorMessages.includes(key) ? 'inline' : 'none';
   };
 
   return (
@@ -29,21 +57,21 @@ export const RegionForm = ({ onSubmitForm }) => {
             className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
             name="name" value={regionForm.name} onChange={change} />
           <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Name required</span>
+          <span className="lmgbi_formAlert" style={{ color: 'red', display: showErr('REGIONFORM_NAME') }}>Name required</span>
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 form-group lmgbi_formEntry">
-          <label className="lmgbi_formTitle" htmlFor="name-input">
+          <label className="lmgbi_formTitle" htmlFor="abbr-input">
             Abbr:
           </label>
           <span className="required-marker"></span>
           <br />
-          <input id="name-input" type="text"
+          <input id="abbr-input" type="text"
             className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
             name="abbr" value={regionForm.abbr} onChange={change} />
           <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Name required</span>
+          <span className="lmgbi_formAlert" style={{ color: 'red', display: showErr('REGIONFORM_ABBR') }}>Abbr required</span>
         </div>
       </div>
       <div className="row">
@@ -61,7 +89,7 @@ export const RegionForm = ({ onSubmitForm }) => {
             <option value="West">West</option>
           </select>
           <br />
-          <span className="lmgbi_formAlert" style={{ color: 'red', display: 'none' }}>Region required</span>
+          <span className="lmgbi_formAlert" style={{ color: 'red', display: showErr('REGIONFORM_REGION') }}>Region required</span>
         </div>
       </div>
       <div className="row">

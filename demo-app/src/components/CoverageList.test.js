@@ -6,9 +6,16 @@ import renderer from "react-test-renderer";
 import { CoverageList } from "./CoverageList";
 
 test("snapshot CoverageList component", () => {
+
+  const coverages = [
+    { id: 1, name: "First" },
+    { id: 2, name: "Second" },
+    { id: 3, name: "Third" },
+  ];
+
   expect(
     renderer.create(
-      <CoverageList headerText="Info">
+      <CoverageList coverages={coverages}>
         Some Content
       </CoverageList>
     ).toJSON()
@@ -24,7 +31,7 @@ describe("CoverageList component", () => {
       { id: 1, name: "First" },
       { id: 2, name: "Second" },
       { id: 3, name: "Third" },
-    ]
+    ];
   });
 
   test("renders CoverageList component", () => {
@@ -42,7 +49,7 @@ describe("CoverageList component", () => {
 
     expect(listItems.length).toBe(3);
 
-    coverages.forEach( (coverage, index) => {
+    coverages.forEach((coverage, index) => {
       expect(listItems[index].textContent).toBe(coverage.name);
     });
 

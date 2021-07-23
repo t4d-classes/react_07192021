@@ -17,7 +17,7 @@ export class MessageBox extends Component {
         <h3 className="panel-heading">
           {this.props.headerText}
         </h3>
-        <div className="panel-body">
+        <div role="complementary" className="panel-body">
           {this.props.children}
         </div>
       </div>

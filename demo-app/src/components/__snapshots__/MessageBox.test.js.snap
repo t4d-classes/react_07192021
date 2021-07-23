@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot MessageBox component 1`] = `
+<div
+  className="panel panel-default"
+>
+  <h3
+    className="panel-heading"
+  >
+    Info
+  </h3>
+  <div
+    className="panel-body"
+    role="complementary"
+  >
+    Some Content
+  </div>
+</div>
+`;

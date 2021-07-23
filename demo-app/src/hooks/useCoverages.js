@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 export const useCoverages = () => {
 
   const [
-    coverages, /* first element: state data */
-    setCoverages /* second element: update function, this func both updates the state and triggers the re-render */
-  ] = useState([] /* initial state value before we call the REST API */);
+    coverages,
+    setCoverages,
+  ] = useState([]);
 
-  useEffect(function loadCoveragesAfterRender() {
+  useEffect(() => {
 
     fetch('http://localhost:3060/coverages')
       .then(res => res.json())

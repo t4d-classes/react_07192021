@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot CoveragesPage component 1`] = `
+<div>
+  <header>
+    <h1>
+      Coverages
+    </h1>
+  </header>
+  <p>
+    Manage coverages...
+  </p>
+  <form
+    className="container-fluid"
+  >
+    <span>
+      Form is Valid
+    </span>
+    
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-12 form-group lmgbi_formEntry"
+      >
+        <label
+          className="lmgbi_formTitle"
+          htmlFor="coverage-name-input"
+        >
+          Coverage Name:
+        </label>
+        <span
+          className="required-marker"
+        />
+        <br />
+        <input
+          className="form-control lmgbi_formValue lmgbi_formRequired lmgbi_useNameAttr"
+          id="coverage-name-input"
+          name="coverageName"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <br />
+        <span
+          className="lmgbi_formAlert"
+          style={
+            Object {
+              "color": "red",
+              "display": "none",
+            }
+          }
+        >
+          Coverage Name required
+        </span>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Add Coverage
+      </button>
+    </div>
+  </form>
+</div>
+`;

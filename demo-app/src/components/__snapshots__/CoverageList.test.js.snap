@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot CoverageList component 1`] = `
+Array [
+  <header>
+    Some Content
+  </header>,
+  <ul />,
+]
+`;

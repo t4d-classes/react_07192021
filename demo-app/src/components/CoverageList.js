@@ -8,7 +8,7 @@ export const CoverageList = ({ children, coverages }) => {
       </header>
       <ul>
         {coverages.map(c =>
-          <li key={c.id} className="info critical">
+          <li key={c.id}>
             {c.name}
           </li>)}
       </ul>
@@ -28,15 +28,3 @@ CoverageList.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-// Eric's short version
-// export const CoverageList = ({ children, coverages }) => <>
-//   <header>
-//     {children}
-//   </header>
-//   <ul>
-//     {coverages.map(c =>
-//       <li key={c.id} className="info critical">
-//         {c.name}
-//       </li>)}
-//   </ul>
-// </>;

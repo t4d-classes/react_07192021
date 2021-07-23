@@ -3,15 +3,6 @@ import PropTypes from "prop-types";
 
 import { useForm } from "../hooks/useForm";
 
-// all values are truthy except for:
-
-// false
-// 0
-// '' empty string
-// NaN
-// null
-// undefined
-
 export const CoverageForm = ({ onSubmitForm }) => {
 
   const [errorMessage, setErrorMessage] = useState('');

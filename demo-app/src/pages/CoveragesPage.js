@@ -1,5 +1,5 @@
 import { CoverageList } from "../components/CoverageList";
-import { CoverageForm } from "../components/CoverageForm";
+import { CoverageForm } from "../components/CoverageFormClass";
 
 import { useCoverages } from "../hooks/useCoverages";
 
